@@ -1,11 +1,21 @@
 #! /usr/bin/python3
 
-import re
+import argparse
+
+parser = argparse.ArgumentParser(description='reformat lmps file')
+parser.add_argument('basefile', action='store', help='Base file for comparison')
+parser.add_argument('lmps', action='store', help='File that will be reformated')
+parser.add_argument('-o', '--output', default='output.lmps', help='Default name for output file')
+
+args = parser.parse_args()
+file1_name = args.basefile
+file2_name = args.lmps
+output_name = args.output
 
 # Lectura de ficheros
-file1 = open('out14aR.lmps')
-file2 = open('out14aL-v1.lmps')
-file3 = open('output.lmps', 'w')
+file1 = open(file1_name)
+file2 = open(file2_name)
+file3 = open(output_name, 'w')
 
 for num in range(2):
     line1 = file1.readline()
@@ -201,7 +211,6 @@ for num in range(3):
     print(line2, end='', file=file3)
 
 # Dihedral Section
-print(dihedral_match)
 for dihedral in range(dihedrals):
     line2 = file2.readline()
     dihedral_in_line = line2.split()[1]
