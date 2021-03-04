@@ -1,0 +1,65 @@
+
+
+51 atoms
+58 bonds
+108 angles
+185 dihedrals
+0 impropers
+
+11 atom types
+17 bond types
+32 angle types
+63 dihedral types
+0  improper types
+
+0.000000 0.000000 xlo xhi
+0.000000 0.000000 ylo yhi
+0.000000 0.000000 zlo zhi
+
+Masses
+
+1  16.00 #   os
+2  12.01 #   ce
+3  12.01 #   ca
+4  12.01 #   cy
+5  12.01 #   c3
+6  12.01 #   cf
+7  12.01 #   c1
+8  14.01 #   n1
+9  16.00 #   oh
+10 1.008 #   hc
+11 1.008 #   ha
+
+Pair Coeffs  # lj/charmm/coul/long
+
+1   0.0726 3.15609779888  #  os
+2   0.0988 3.31521230994  #  ce
+3   0.0988 3.31521230994  #  ca
+4   0.1078 3.39770953124  #  cy
+5   0.1078 3.39770953124  #  c3
+6   0.0988 3.31521230994  #  cf
+7   0.1596 3.47895949434  #  c1
+8   0.1098 3.27351824993  #  n1
+9   0.0930 3.24287133403  #  oh
+10  0.0208 2.60017699876  #  hc
+11  0.0161 2.62547852236  #  ha
+
+Bond Coeffs # harmonic
+
+1  355.66 1.371   # ca-os  ca,os CORR_SOURCE5 96 0.0128   os,ce
+2  378.57 1.398   # ca-ca  ca,ca SOURCE1_SOURCE5 121206 0.0061   ce,ce
+3  378.57 1.398   # ca-ca  ca,ca SOURCE1_SOURCE5 121206 0.0061   ce,ca
+4  378.57 1.398   # ca-ca  ca,ca SOURCE1_SOURCE5 121206 0.0061   ca,ca
+5  395.72 1.086   # ca-ha  ca,ha SOURCE3_SOURCE5 65456 0.0010   ca,ha
+6  250.32 1.516   # c3-ca  ca,c3 SOURCE1_SOURCE5 10699 0.0054   ca,c3
+7  250.49 1.515   # ca-cy  ca,cy SOURCE4_SOURCE5 35 0.0055   ca,cy
+8  379.47 1.095   # cy-hc  cy,hc SOURCE3_SOURCE5 840 0.0011   cy,hc
+9  236.93 1.532   # c3-cy  cy,c3 SOURCE1_SOURCE5 522 0.0055   cy,c3
+10 218.51 1.556   # cy-cy  cy,cy SOURCE1_SOURCE5 1665 0.0053   cy,cy
+11 375.92 1.097   # c3-hc  c3,hc SOURCE3_SOURCE5 133628 0.0015   c3,hc
+12 232.52 1.538   # c3-c3  c3,c3 SOURCE1_SOURCE5 88072 0.0058   c3,c3
+13 384.73 1.350   # ca-oh  ca,oh CORR_SOURCE5 58 0.0102   ce,oh
+14 378.57 1.398   # ca-ca  ca,ca SOURCE1_SOURCE5 121206 0.0061   ca,cf
+15 325.62 1.440   # c1-ca  ca,c1 SOUECE3 1   ca,c1
+16 378.57 1.398   # ca-ca  ca,ca SOURCE1_SOURCE5 121206 0.0061   cf,cf
+17 891.54 1.153   # c1-n1  c1,n1 SOURCE1_SOURCE5 481 0.0035   c1,n1
