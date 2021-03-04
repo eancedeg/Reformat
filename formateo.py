@@ -5,7 +5,7 @@ import argparse
 parser = argparse.ArgumentParser(description='reformat lmps file')
 parser.add_argument('basefile', action='store', help='Base file for comparison')
 parser.add_argument('lmps', action='store', help='File that will be reformated')
-parser.add_argument('-o', '--output', default='output.lmps', help='Default name for output file')
+parser.add_argument('-o', '--output', default='output.lmps', help='File name for output file (Default: output.lmps)')
 
 args = parser.parse_args()
 file1_name = args.basefile
